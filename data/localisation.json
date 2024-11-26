@@ -1,0 +1,23 @@
+{
+  "en": {
+    "about-me": "About Me",
+    "education": "Education",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact-me": "Contact Me"
+  },
+  "fr": {
+    "about-me": "À propos de moi",
+    "education": "Formation",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "contact-me": "Contactez moi"
+  },
+  "es": {
+    "about-me": "Sobre mi",
+    "education": "Educacion",
+    "projects": "Proyectos",
+    "skills": "Competencias",
+    "contact-me": "Contactame"
+  }
+}

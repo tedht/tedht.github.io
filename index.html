@@ -2,53 +2,53 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="Author" lang="fr" content="Ted HERAMBERT">
-	<meta name="Language" content="fr">
+	<meta name="Author" lang="en" content="Ted HERAMBERT">
 	<meta name="Date" content="2024-11-25">
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+	<script src="src/app.js"></script>
 	<title>Ted Herambert</title>
 </head>
 
 <body>
 	<header>
-		<nav>
-			<ul>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
+		<nav class="navbar" >
+			<a id="logo" class="nav-link" href="index.html">Ted Herambert</a>
+			<ul class="nav-menu">
+				<li class="nav-item"><a class="nav-link" href="pages/about-me.html" data-key="about-me">About me</a></li>
+				<li class="nav-item"><a class="nav-link" href="pages/projects.html" data-key="projects">Projects</a></li>
+				<li class="nav-item"><a class="nav-link" href="pages/skills.html" data-key="skills">Skills</a></li>
+				<li class="nav-item"><a class="nav-link" href="pages/contact.html" data-key="contact-me">Contact Me</a></li>
+			</ul>
+
+			<ul class="language-menu">
+				<li class="language-item"><a class="language-link" onclick="changeLanguage('en')">English</a>
+				<ul class="dropdown-menu">
+					<li class="dropdown-item"><a class="dropdown-link" onclick="changeLanguage('fr')">Français</a>
+					<li class="dropdown-item"><a class="dropdown-link" onclick="changeLanguage('es')">Español</a>
+				</ul>
+				</li>
 			</ul>
 		</nav>
-		<p><a href="">Fil d'ariane</a></p>
 	</header>
 
-	<main>
+	<main class="main">
 
-		<h1>xxx</h1>
+		<h1>Welcome to My Portfolio</h1>
 
 		<section id="">
-			<h2>xxx</h2>
-			
-			<article>
-				<h3>xxx</h3>
-			</article>
+			<h2>Crafting Digital Experiences with Passion and Precision</h2>
 
-			<article>
-				<h3>xxx</h3>
-			</article>
-	
-		</section>
-	
-		<section>
-			<h2>xxx</h2>
-		</section>
-	
-		<section>
-			<h2>xxx</h2>
+			<p>
+				Hi, I’m [Your Name], a [Your Profession/Role] specializing in creating innovative solutions 
+				through [Your Skills/Expertise, e.g., web development, design, etc.]. My mission is to bring 
+				ideas to life with modern technologies, creative problem-solving, and a deep understanding of 
+				user needs.
+			</p>
 		</section>
 	
 	</main>
 
-	<footer>
+	<footer class="footer">
 		<p>
 			© Ted Herambert 2024
 		</p>
