@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Author" lang="en" content="Ted HERAMBERT">
+	<meta name="Date" content="2024-11-25">
+	<link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+	<script src="../src/app.js"></script>
+	<title>Ted Herambert</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar" >
+			<a id="logo" class="nav-link" href="../index.html">Ted Herambert</a>
+			<ul class="nav-menu">
+				<li class="nav-item"><a class="nav-link" href="../index.html" data-key="home">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="about.html" data-key="about">About me</a></li>
+				<li class="nav-item"><a class="nav-link" href="projects.html" data-key="projects">Projects</a></li>
+				<li class="nav-item"><a class="nav-link active" href="skills.html" data-key="skills">Skills</a></li>
+				<li class="nav-item"><a class="nav-link" href="contact.html" data-key="contact">Contact</a></li>
+			</ul>
+
+			<ul class="lang-menu">
+				<li class="lang-item"><a class="lang-button" data-lang="en" onclick="changeLanguage(this)">English</a>
+				<ul class="dropdown-menu">
+					<li class=".lang-dropdown-item"><a class="dropdown-link" data-lang="fr" onclick="changeLanguage(this)">Français</a>
+					<li class=".lang-dropdown-item"><a class="dropdown-link" data-lang="es" onclick="changeLanguage(this)">Español</a>
+				</ul>
+				</li>
+			</ul>
+		</nav>
+		<nav class="breadcrumbs">
+			<a href="../index.html" data-key="home">Home</a> >> <a href="skills.html" data-key="skills">Skills</a>
+		</nav>
+		<h1 data-key="skills">Skills</h1>
+	</header>
+
+    <main>
+        <section class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <article class="skill">
+                    <h3>Programming Languages</h3>
+                    <p>Java, C++, Python, JavaScript, HTML, CSS</p>
+                </article>
+                <article class="skill">
+                    <h3>Game Development</h3>
+                    <p>Unity, Unreal Engine, Raylib</p>
+                </article>
+                <article class="skill">
+                    <h3>Databases</h3>
+                    <p>MySQL, PostgreSQL, MongoDB</p>
+                </article>
+                <article class="skill">
+                    <h3>Tools</h3>
+                    <p>Git, Docker, Linux, Visual Studio Code</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2>Soft Skills</h2>
+            <div class="skills-grid">
+                <article class="skill">
+                    <h3>Communication</h3>
+                    <p>Fluent in English and French, effective written and verbal skills</p>
+                </article>
+                <article class="skill">
+                    <h3>Problem-Solving</h3>
+                    <p>Creative and efficient approaches to complex challenges</p>
+                </article>
+                <article class="skill">
+                    <h3>Teamwork</h3>
+                    <p>Collaborates effectively in diverse and cross-functional teams</p>
+                </article>
+                <article class="skill">
+                    <h3>Adaptability</h3>
+                    <p>Quick to learn and adapt to new tools, technologies, and environments</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+	<footer class="footer">
+		<p>&copy; 2024 Ted Herambert</p>
+		<!--<address class="contact-info">
+			<p><a href="mailto:ted.herambert.dev@gmail.com">ted.herambert.dev@gmail.com</a></p>
+		</address>-->
+	</footer>
+</body>
+</html>

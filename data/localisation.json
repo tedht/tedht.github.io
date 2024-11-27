@@ -1,23 +1,23 @@
 {
   "en": {
-    "about-me": "About Me",
-    "education": "Education",
+    "home": "Home",
+    "about": "About Me",
     "projects": "Projects",
     "skills": "Skills",
-    "contact-me": "Contact Me"
+    "contact": "Contact Me"
   },
   "fr": {
-    "about-me": "À propos de moi",
-    "education": "Formation",
+    "home": "Accueil",
+    "about": "À propos de moi",
     "projects": "Projets",
     "skills": "Compétences",
-    "contact-me": "Contactez moi"
+    "contact": "Contactez moi"
   },
   "es": {
-    "about-me": "Sobre mi",
-    "education": "Educacion",
+    "home": "Inicio",
+    "about": "Sobre mi",
     "projects": "Proyectos",
-    "skills": "Competencias",
-    "contact-me": "Contactame"
+    "skills": "Habilidades",
+    "contact": "Contactame"
   }
 }

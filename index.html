@@ -14,44 +14,60 @@
 		<nav class="navbar" >
 			<a id="logo" class="nav-link" href="index.html">Ted Herambert</a>
 			<ul class="nav-menu">
-				<li class="nav-item"><a class="nav-link" href="pages/about-me.html" data-key="about-me">About me</a></li>
+				<li class="nav-item"><a class="nav-link active" href="index.html" data-key="home">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="pages/about.html" data-key="about">About me</a></li>
 				<li class="nav-item"><a class="nav-link" href="pages/projects.html" data-key="projects">Projects</a></li>
 				<li class="nav-item"><a class="nav-link" href="pages/skills.html" data-key="skills">Skills</a></li>
-				<li class="nav-item"><a class="nav-link" href="pages/contact.html" data-key="contact-me">Contact Me</a></li>
+				<li class="nav-item"><a class="nav-link" href="pages/contact.html" data-key="contact">Contact</a></li>
 			</ul>
 
-			<ul class="language-menu">
-				<li class="language-item"><a class="language-link" onclick="changeLanguage('en')">English</a>
-				<ul class="dropdown-menu">
-					<li class="dropdown-item"><a class="dropdown-link" onclick="changeLanguage('fr')">Français</a>
-					<li class="dropdown-item"><a class="dropdown-link" onclick="changeLanguage('es')">Español</a>
+			<ul class="lang-menu">
+				<li class="lang-item"><button id="active-lang-button" class="lang-button active" data-lang="en" onclick="applyLanguage('en')">English</button>
+				<ul class="lang-dropdown">
+					<li class=".lang-dropdown-item"><button class="lang-button" data-lang="fr" onclick="applyLanguage('fr')">Français</button>
+					<li class=".lang-dropdown-item"><button class="lang-button" data-lang="es" onclick="applyLanguage('es')">Español</button>
 				</ul>
 				</li>
 			</ul>
 		</nav>
+		<nav class="breadcrumbs">
+			<a href="index.html" data-key="home">Home</a>
+		</nav>
 	</header>
 
-	<main class="main">
-
-		<h1>Welcome to My Portfolio</h1>
-
-		<section id="">
-			<h2>Crafting Digital Experiences with Passion and Precision</h2>
-
-			<p>
-				Hi, I’m [Your Name], a [Your Profession/Role] specializing in creating innovative solutions 
-				through [Your Skills/Expertise, e.g., web development, design, etc.]. My mission is to bring 
-				ideas to life with modern technologies, creative problem-solving, and a deep understanding of 
-				user needs.
-			</p>
-		</section>
-	
+	<main class="home">
+		<h1>Hi, I'm Ted Herambert !</h1>
+		<p>Welcome to my personal website. Feel free to explore and get to know more about me.</p>
+		<div class="button-container">
+			<button onclick="window.location.href='pages/about.html'">About Me</button>
+			<button onclick="window.location.href='pages/contact.html'">Contact</button>
+		</div>
 	</main>
 
 	<footer class="footer">
-		<p>
-			© Ted Herambert 2024
-		</p>
-	</footer>
+		<!--<div class="footer-content-container">
+			<nav class="links">
+				<h3 data-key="links">Links</h3>
+				<ul>
+				  <li><a href="index.html" data-key="home">Home</a></li>
+				  <li><a href="pages/about.html" data-key="about">About me</a></li>
+				  <li><a href="pages/projects.html" data-key="projects">Projects</a></li>
+				  <li><a href="pages/skills.html" data-key="skills">Skills</a></li>
+				  <li><a href="pages/contact.html" data-key="contact">Contact</a></li>
+				</ul>
+			  </nav>
+			
+			  <section class="social-media">
+				<h3 data-key="follow-me">Follow Me</h3>
+				<ul>
+				  <li><a href="https://github.com/tedht" target="_blank">GitHub</a></li>
+				</ul>
+			  </section>
+		</div>	-->	
+		<p>&copy; 2024 Ted Herambert</p>
+		<!--<address class="contact-info">
+			<p><a href="mailto:ted.herambert.dev@gmail.com">ted.herambert.dev@gmail.com</a></p>
+		</address>-->
+	 </footer>
 </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Author" lang="en" content="Ted HERAMBERT">
+	<meta name="Date" content="2024-11-25">
+	<link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+	<script src="../src/app.js"></script>
+	<title>Ted Herambert</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar" >
+			<a id="logo" class="nav-link" href="index.html">Ted Herambert</a>
+			<ul class="nav-menu">
+				<li class="nav-item"><a class="nav-link" href="../index.html" data-key="home">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="about.html" data-key="about">About me</a></li>
+				<li class="nav-item"><a class="nav-link active" href="projects.html" data-key="projects">Projects</a></li>
+				<li class="nav-item"><a class="nav-link" href="skills.html" data-key="skills">Skills</a></li>
+				<li class="nav-item"><a class="nav-link" href="contact.html" data-key="contact">Contact</a></li>
+			</ul>
+
+			<ul class="lang-menu">
+				<li class="lang-item"><a class="lang-button" data-lang="en" onclick="changeLanguage(this)">English</a>
+				<ul class="dropdown-menu">
+					<li class=".lang-dropdown-item"><a class="dropdown-link" data-lang="fr" onclick="changeLanguage(this)">Français</a>
+					<li class=".lang-dropdown-item"><a class="dropdown-link" data-lang="es" onclick="changeLanguage(this)">Español</a>
+				</ul>
+				</li>
+			</ul>
+		</nav>
+		<nav class="breadcrumbs">
+			<a href="../index.html" data-key="home">Home</a> >> <a href="projects.html" data-key="projects">Projects</a>
+		</nav>
+		<h1 data-key="projects">Projects</h1>
+	</header>
+
+	<main>
+        <section class="projects-container">
+            <article class="project">
+                <div class="text">
+                    <h3>Project Title: Todo App</h3>
+                    <p>A simple to-do list application to organize your tasks efficiently.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/username/todo-app" target="_blank" class="button">View on GitHub</a>
+                </div>
+                <img src="todo-app-image.jpg" alt="Screenshot of Todo App">
+            </article>
+            <article class="project">
+                <img src="portfolio-image.jpg" alt="Screenshot of Portfolio Site">
+                <div class="text">
+                    <h3>Project Title: Portfolio Website</h3>
+                    <p>A personal portfolio to showcase projects and skills.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/username/portfolio" target="_blank" class="button">View on GitHub</a>
+                </div>
+            </article>
+            <article class="project">
+                <div class="text">
+                    <h3>Project Title: Weather App</h3>
+                    <p>A weather forecasting application with real-time updates.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript, API Integration</p>
+                    <a href="https://github.com/username/weather-app" target="_blank" class="button">View on GitHub</a>
+                </div>
+                <img src="weather-app-image.jpg" alt="Screenshot of Weather App">
+            </article>
+        </section>
+    </main>
+
+	<footer class="footer">	
+		<p>&copy; 2024 Ted Herambert</p>
+		<!--<address class="contact-info">
+			<p><a href="mailto:ted.herambert.dev@gmail.com">ted.herambert.dev@gmail.com</a></p>
+		</address>-->
+	 </footer>
+</body>
+</html>
