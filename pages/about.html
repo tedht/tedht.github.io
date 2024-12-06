@@ -20,12 +20,12 @@
 				<li class="nav-item"><a class="nav-link" href="skills.html" data-key="skills">Skills</a></li>
 				<li class="nav-item"><a class="nav-link" href="contact.html" data-key="contact">Contact Me</a></li>
 			</ul>
-
+			
 			<ul class="lang-menu">
-				<li class="lang-item"><a class="lang-button" data-lang="en" onclick="changeLanguage(this)">English</a>
-				<ul class="dropdown-menu">
-					<li class=".lang-dropdown-item"><a class="dropdown-link lang-button" data-lang="fr" onclick="changeLanguage(this)">Français</a>
-					<li class=".lang-dropdown-item"><a class="dropdown-link lang-button" data-lang="es" onclick="changeLanguage(this)">Español</a>
+				<li class="lang-item"><button id="active-lang-button" class="lang-button active" data-lang="en" onclick="applyLanguage('en')">English</button>
+				<ul class="lang-dropdown">
+					<li class=".lang-dropdown-item"><button class="lang-button" data-lang="fr" onclick="applyLanguage('fr')">Français</button>
+					<li class=".lang-dropdown-item"><button class="lang-button" data-lang="es" onclick="applyLanguage('es')">Español</button>
 				</ul>
 				</li>
 			</ul>
@@ -38,20 +38,22 @@
 
 	<main>
 		<section class="about-section">
-			<img src="profile-picture.jpg" alt="A profile picture of me" class="profile-picture">
+			<img src="../images/about/id.png" alt="A profile picture of me" class="profile-picture">
 			<div class="about-text">
-				<h2>Hello! I'm [Your Name]</h2>
-				<p>
-					I'm a passionate [Your Profession/Role] with experience in [key skills or areas]. 
-					I enjoy creating, learning, and contributing to projects that challenge me to grow.
+				<h2 data-key="about-intro">Hi, I'm Ted Herambert !</h2>
+				<p data-key="about-p1">
+					I am currently a second year IT student pursuing a BUT Informatique at the IUT Le Havre. Before that, 
+					I spent a year pursuing a bachelor of science in computer science at a university in Thailand 
+					(KMUTT to be specific). I graduated from the Lycée Français International de Bangkok, earning my 
+					baccalauréat with the specialities of Mathematics and Computer Science. 
+				</p>
+				<p data-key="about-p2">
+					I spend my free time developping 2D games, working on the coding aspect and designing the game assets myself.
+					I'm also interested Thai boxing, which I practice once or twice a week. 
 				</p>
 				<p>
-					My interests include [list a few interests or hobbies, e.g., game development, open-source projects, or AI]. 
-					When I'm not working on projects, you can find me [a personal detail, e.g., exploring nature, reading sci-fi, etc.].
-				</p>
-				<p>
-					Feel free to connect with me via <a href="mailto:your-email@example.com">email</a> or check out my work on 
-					<a href="https://github.com/username" target="_blank">GitHub</a>.
+					<span data-key="about-p3a">Feel free to connect with me via</span> <a href="mailto:your-email@example.com" data-key="email">email</a> <span data-key="about-p3b">or check out my work on </span>
+					<a href="https://github.com/tedht" target="_blank">GitHub</a>.
 				</p>
 			</div>
 		</section>
@@ -59,9 +61,6 @@
 
 	<footer class="footer">
 		<p>&copy; 2024 Ted Herambert</p>
-		<!--<address class="contact-info">
-			<p><a href="mailto:ted.herambert.dev@gmail.com">ted.herambert.dev@gmail.com</a></p>
-		</address>-->
 	</footer>
 </body>
 </html>

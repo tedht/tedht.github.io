@@ -22,10 +22,10 @@
 			</ul>
 
 			<ul class="lang-menu">
-				<li class="lang-item"><a class="lang-button" data-lang="en" onclick="changeLanguage(this)">English</a>
-				<ul class="dropdown-menu">
-					<li class=".lang-dropdown-item"><a class="dropdown-link" data-lang="fr" onclick="changeLanguage(this)">Français</a>
-					<li class=".lang-dropdown-item"><a class="dropdown-link" data-lang="es" onclick="changeLanguage(this)">Español</a>
+				<li class="lang-item"><button id="active-lang-button" class="lang-button active" data-lang="en" onclick="applyLanguage('en')">English</button>
+				<ul class="lang-dropdown">
+					<li class=".lang-dropdown-item"><button class="lang-button" data-lang="fr" onclick="applyLanguage('fr')">Français</button>
+					<li class=".lang-dropdown-item"><button class="lang-button" data-lang="es" onclick="applyLanguage('es')">Español</button>
 				</ul>
 				</li>
 			</ul>
@@ -39,37 +39,22 @@
     <main class="contact-main">
         <section class="contact-section">
             <div class="contact-info">
-                <h2>Get in Touch</h2>
+                <h2 data-key="get-in-touch">Get in Touch</h2>
                 <p>
-                    Feel free to contact me directly via email at 
+                    <span data-key="get-in-touch-p1">Feel free to contact me directly via email at </span>
                     <a href="mailto:ted.herambert.dev@gmail.com">ted.herambert.dev@gmail.com</a>.
                 </p>
                 <p>
-                    You can also connect with me on 
-                    <a href="https://www.linkedin.com/in/username" target="_blank">LinkedIn</a> or check out my 
+                    <span data-key="get-in-touch-p2a">You can also connect with me on </span>
+                    <a href="https://www.linkedin.com/in/username" target="_blank">LinkedIn</a><span data-key="get-in-touch-p2b">or check out my </span>
                     <a href="https://github.com/tedht" target="_blank">GitHub</a>.
                 </p>
             </div>
-            <!--<form action="https://formspree.io/f/{your-form-id}" method="POST" class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="_replyto" placeholder="Your email" required>
-                
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
-                
-                <button type="submit" class="button">Send Message</button>
-            </form>-->
         </section>
     </main>
 
 	<footer class="footer">
 		<p>&copy; 2024 Ted Herambert</p>
-		<!--<address class="contact-info">
-			<p><a href="mailto:ted.herambert.dev@gmail.com">ted.herambert.dev@gmail.com</a></p>
-		</address>-->
 	</footer>
 </body>
 </html>

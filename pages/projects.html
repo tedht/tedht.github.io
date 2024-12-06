@@ -20,12 +20,12 @@
 				<li class="nav-item"><a class="nav-link" href="skills.html" data-key="skills">Skills</a></li>
 				<li class="nav-item"><a class="nav-link" href="contact.html" data-key="contact">Contact</a></li>
 			</ul>
-
+			
 			<ul class="lang-menu">
-				<li class="lang-item"><a class="lang-button" data-lang="en" onclick="changeLanguage(this)">English</a>
-				<ul class="dropdown-menu">
-					<li class=".lang-dropdown-item"><a class="dropdown-link" data-lang="fr" onclick="changeLanguage(this)">Français</a>
-					<li class=".lang-dropdown-item"><a class="dropdown-link" data-lang="es" onclick="changeLanguage(this)">Español</a>
+				<li class="lang-item"><button id="active-lang-button" class="lang-button active" data-lang="en" onclick="applyLanguage('en')">English</button>
+				<ul class="lang-dropdown">
+					<li class=".lang-dropdown-item"><button class="lang-button" data-lang="fr" onclick="applyLanguage('fr')">Français</button>
+					<li class=".lang-dropdown-item"><button class="lang-button" data-lang="es" onclick="applyLanguage('es')">Español</button>
 				</ul>
 				</li>
 			</ul>
@@ -40,30 +40,31 @@
         <section class="projects-container">
             <article class="project">
                 <div class="text">
-                    <h3>Project Title: Todo App</h3>
-                    <p>A simple to-do list application to organize your tasks efficiently.</p>
-                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-                    <a href="https://github.com/username/todo-app" target="_blank" class="button">View on GitHub</a>
+                    <h3 data-key="chess-app-title">Chess App</h3>
+                    <p data-key="chess-app-desc">A chess app coded in Java Swing that implments a game loop, an MVC design pattern as well as network functionalities throught the use of Sockets.</p>
+                    <p ><strong><span data-key="technologies">Technologies</span>:</strong> Java (Swing)</p>
+                    <a href="https://github.com/tedht/echec" target="_blank" class="button-link-1" data-key="view-on-github">View on GitHub</a>
                 </div>
-                <img src="todo-app-image.jpg" alt="Screenshot of Todo App">
+                <img src="../images/projects/echec/echec_partie.png" alt="Chess App" style="width: 30%; height: 30%;">
             </article>
+			<article class="project">
+				<div class="text">
+					<h3 data-key="portfolio-website-title">Portfolio Website</h3>
+					<p data-key="portfolio-website-desc1">A personal portfolio to showcase projects and skills.</p>
+					<p data-key="portfolio-website-desc2">This website supports multiple languages (English, French, Spanish) by using a CSV file that is converted into JSON format.</p>
+					<p><strong><span data-key="technologies">Technologies</span>:</strong> HTML, CSS, JavaScript</p>
+					<a href="https://github.com/tedht/tedht.github.io" target="_blank" class="button-link-1" data-key="view-on-github">View on GitHub</a>
+				</div>
+				<img src="portfolio-image.jpg" alt="Portfolio Site">
+			</article>
             <article class="project">
-                <img src="portfolio-image.jpg" alt="Screenshot of Portfolio Site">
                 <div class="text">
-                    <h3>Project Title: Portfolio Website</h3>
-                    <p>A personal portfolio to showcase projects and skills.</p>
-                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-                    <a href="https://github.com/username/portfolio" target="_blank" class="button">View on GitHub</a>
+                    <h3 data-key="bullet-hell-title">Bullet Hell Game Engine</h3>
+                    <p data-key="bullet-hell-desc">A game engine for bullet hell games, featuring object pooling, parallax backgrounds, and custom-made assets.</p>
+                    <p><strong><span data-key="technologies">Technologies</span>:</strong> C++ (raylib)</p>
+                    <a href="https://github.com/tedht/Project-SM" target="_blank" class="button-link-1" data-key="view-on-github">View on GitHub</a>
                 </div>
-            </article>
-            <article class="project">
-                <div class="text">
-                    <h3>Project Title: Weather App</h3>
-                    <p>A weather forecasting application with real-time updates.</p>
-                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript, API Integration</p>
-                    <a href="https://github.com/username/weather-app" target="_blank" class="button">View on GitHub</a>
-                </div>
-                <img src="weather-app-image.jpg" alt="Screenshot of Weather App">
+                <img src="../images/projects/project_sm/project_sm.png" alt="Bullet Hell Game Engine">
             </article>
         </section>
     </main>

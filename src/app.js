@@ -7,7 +7,6 @@ function applyLanguage(language) {
 		element.textContent = localisation[language][key] || key;
 	});
 
-	// Update the visible language link text
 	updateLangBtns(language);
 
 	localStorage.setItem('language', language);
@@ -15,16 +14,15 @@ function applyLanguage(language) {
 
 function updateLangBtns(language) {
 	const activeLangBtn = document.getElementById("active-lang-button");
-	const langDropdown = document.querySelector("lang-dropdown");
+	const langDropdown = document.querySelector(".lang-dropdown");
   
-	// Update the button text
-	const currentLanguage = activeLangBtn.textContent;
+
 	activeLangBtn.textContent = getLanguageName(language);
-  
+	activeLangBtn.setAttribute("data-lang", language);
+	
 	langDropdown.innerHTML = '';
-	const languages = ["en", "fr", "es"].filter(lang => lang !== language);
-  
-	// Create new options excluding the current language
+	const languages = ['en', 'fr', 'es'].filter(lang => lang !== language);
+
 	languages.forEach(lang => {
 		const langListeItem = document.createElement("li");
 		langListeItem.classList.add("lang-dropdown-item");

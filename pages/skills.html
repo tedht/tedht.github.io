@@ -21,10 +21,10 @@
 			</ul>
 
 			<ul class="lang-menu">
-				<li class="lang-item"><a class="lang-button" data-lang="en" onclick="changeLanguage(this)">English</a>
-				<ul class="dropdown-menu">
-					<li class=".lang-dropdown-item"><a class="dropdown-link" data-lang="fr" onclick="changeLanguage(this)">Français</a>
-					<li class=".lang-dropdown-item"><a class="dropdown-link" data-lang="es" onclick="changeLanguage(this)">Español</a>
+				<li class="lang-item"><button id="active-lang-button" class="lang-button active" data-lang="en" onclick="applyLanguage('en')">English</button>
+				<ul class="lang-dropdown">
+					<li class=".lang-dropdown-item"><button class="lang-button" data-lang="fr" onclick="applyLanguage('fr')">Français</button>
+					<li class=".lang-dropdown-item"><button class="lang-button" data-lang="es" onclick="applyLanguage('es')">Español</button>
 				</ul>
 				</li>
 			</ul>
@@ -37,45 +37,45 @@
 
     <main>
         <section class="skills-section">
-            <h2>Technical Skills</h2>
+            <h2 data-key="technical-skills">Technical Skills</h2>
             <div class="skills-grid">
                 <article class="skill">
-                    <h3>Programming Languages</h3>
-                    <p>Java, C++, Python, JavaScript, HTML, CSS</p>
+                    <h3 data-key="programming-languages">Programming Languages</h3>
+                    <p>C++, C, Java, Html, Css, Javascript, PHP</p>
                 </article>
                 <article class="skill">
-                    <h3>Game Development</h3>
-                    <p>Unity, Unreal Engine, Raylib</p>
+                    <h3 data-key="frameworks-and-librairies">Frameworks and Libairies</h3>
+                    <p>Swing/AWT (Java), React (JavaScript), Raylib (C/C++)</p>
                 </article>
                 <article class="skill">
-                    <h3>Databases</h3>
-                    <p>MySQL, PostgreSQL, MongoDB</p>
+                    <h3 data-key="databases">Databases</h3>
+                    <p>PostgreSQL, PLpgSQL</p>
                 </article>
                 <article class="skill">
-                    <h3>Tools</h3>
+                    <h3 data-key="tools">Tools</h3>
                     <p>Git, Docker, Linux, Visual Studio Code</p>
                 </article>
             </div>
         </section>
 
         <section class="skills-section">
-            <h2>Soft Skills</h2>
+            <h2 data-key="soft-skills">Soft Skills</h2>
             <div class="skills-grid">
                 <article class="skill">
-                    <h3>Communication</h3>
-                    <p>Fluent in English and French, effective written and verbal skills</p>
+                    <h3 data-key="languages-title">Languages</h3>
+                    <p data-key="languages-desc">Fluent in English and French, effective written and verbal skills. Basic understanding of Spanish</p>
                 </article>
                 <article class="skill">
-                    <h3>Problem-Solving</h3>
-                    <p>Creative and efficient approaches to complex challenges</p>
+                    <h3 data-key="problem-solving-title">Problem-Solving</h3>
+                    <p data-key="problem-solving-desc">Creative and efficient approaches to complex challenges</p>
                 </article>
                 <article class="skill">
-                    <h3>Teamwork</h3>
-                    <p>Collaborates effectively in diverse and cross-functional teams</p>
+                    <h3 data-key="teamwork-title">Teamwork</h3>
+                    <p data-key="teamwork-desc">Collaborates effectively in diverse and cross-functional teams</p>
                 </article>
                 <article class="skill">
-                    <h3>Adaptability</h3>
-                    <p>Quick to learn and adapt to new tools, technologies, and environments</p>
+                    <h3 data-key="adaptability-title">Adaptability</h3>
+                    <p data-key="adaptability-desc">Quick to learn and adapt to new tools, technologies, and environments</p>
                 </article>
             </div>
         </section>

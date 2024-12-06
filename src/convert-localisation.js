@@ -1,5 +1,5 @@
 // installer csvtojson : npm install csvtojson
-// converir en json : node convert-translations.js
+// converir en json : node convert-localisation.js
 const fs = require('fs');
 const csv = require('csvtojson');
 
