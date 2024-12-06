@@ -61,8 +61,7 @@ p,a{
 	font-weight: bold;
 }
 
-.active,
-.lang-button.active {
+.active {
 	background-color: #1774ef;
 	color: white;
 }
@@ -83,14 +82,14 @@ p,a{
 }
 
 .lang-button {
-	text-decoration: none;      
+	text-decoration: none;  
 	padding: 15px 20px;    
 	transition: background-color 0.3s;
 	display: flex;
 	border: none;
 	background-color: #f4f4f9;
+	font-size: 16px;
 }
- ;
 
 .lang-button:hover {
 	background-color: #cecece;

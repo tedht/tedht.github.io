@@ -69,7 +69,7 @@ function loadLocalisation(language) {
   
 
 document.addEventListener("DOMContentLoaded", () => {
-  const savedLanguage = localStorage.getItem('language') || 'en';
+  const savedLanguage = localStorage.getItem('language') || 'fr';
   loadLocalisation(savedLanguage);
-  updateLangBtns(savedLanguage);  // Set the initial language link text
+  updateLangBtns(savedLanguage);
 });
