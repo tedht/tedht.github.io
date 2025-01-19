@@ -35,10 +35,11 @@ p,a{
 .nav-menu {
 	list-style-type: none; 
 	display: flex;         
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center; 
 	margin: 0;
 	padding: 0;
+	flex-grow: 1;
 }
 
 .nav-item {
@@ -282,12 +283,11 @@ p,a{
 /* About */
 /* ***** */
 .about-section {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 40px auto;
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 0 20px;
 }
 
 .profile-picture {
@@ -296,6 +296,7 @@ p,a{
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     object-fit: cover;
+	margin-right: 32px;
 }
 
 .about-text {
