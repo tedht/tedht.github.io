@@ -15,24 +15,24 @@ layers[0].image.src = 'images/backgrounds/base_black.PNG';
 layers[1].image.src = 'images/backgrounds/stars_2.PNG';
 layers[2].image.src = 'images/backgrounds/stars_1.PNG';
 
-let scrollY = 0;
+//let scrollY = 20;
 
-let imagesLoaded = 0;
-layers.forEach(layer => {
-    layer.image.onload = () => {
-        imagesLoaded++;
-        if (imagesLoaded === layers.length) {
-            draw();
-        }
-    };
-});
+//let imagesLoaded = 0;
+//layers.forEach(layer => {
+//    layer.image.onload = () => {
+//        imagesLoaded++;
+//        if (imagesLoaded === layers.length) {
+//            draw(0);
+//        }
+//    };
+//});
+
+window.addEventListener('load',function(){ draw(0); });
 
 function draw() {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 	layers.forEach(layer => {
-		// Calculate the y position based on scroll and layer speed
-		layer.y = scrollY * layer.speed;
 
 		const scale = Math.max(
             canvas.width / layer.image.width,
@@ -40,6 +40,11 @@ function draw() {
         );
         const scaledWidth = layer.image.width * scale;
         const scaledHeight = layer.image.height * scale;
+
+		// Calculate the y position based on scroll and layer speed
+		//layer.y = scrollY * layer.speed;
+		layer.y += 20 * layer.speed;
+		if(layer.y+canvas.height >= scaledHeight) layer.y = 0;
 
         ctx.drawImage(
             layer.image,
@@ -57,9 +62,9 @@ function draw() {
 	requestAnimationFrame(draw);
 }
 
-window.addEventListener('scroll', () => {
-	scrollY = window.scrollY;
-});
+//window.addEventListener('scroll', () => {
+//	scrollY = window.scrollY;
+//});
 
 window.addEventListener('resize', () => {
 	canvas.width = window.innerWidth;
