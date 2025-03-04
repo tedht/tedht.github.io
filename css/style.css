@@ -370,11 +370,6 @@ canvas#backgroundCanvas {
     gap: 20px;
 }
 
-/*
-.project:nth-child(even) {
-    flex-direction: row-reverse;
-}*/
-
 .project img {
     width: 40%;
     height: auto;

@@ -25,7 +25,7 @@
     "quizz-app-title": "QCMBuilder",
     "quizz-app-desc": "An app coded in Java Swing. It allows the user to create and store quiz questions of various types (Multiple choice questions, Association...) that can then be used to generate quizs as html websites.",
     "nwc-title": "Net Worth Calculator",
-    "nwc-desc": "A web application developped using React MUI that allows users to calculate their net worth based on their assets and liabilities. Users are able to create and log into accounts as well as add, edit and delete entries (assets or liabilities), among other festures.",
+    "nwc-desc": "A web application developped using React MUI that allows users to calculate their net worth based on their assets and liabilities. Users are able to create and log into an account as well as add, edit and delete entries (assets or liabilities), among other festures.",
     "technical-skills": "Technical Skills",
     "programming-languages": "Programming Languages",
     "frameworks-and-librairies": "Frameworks and Libairies",
@@ -73,7 +73,7 @@
     "quizz-app-title": "QCMBuilder",
     "quizz-app-desc": "Une application codée en Java Swing. Elle permet à l'utilisateur de créer et de stocker des questions de quiz de différents types (questions à choix multiples, associations, etc.), qui peuvent ensuite être utilisées pour générer des quiz sous forme de sites web HTML.",
     "nwc-title": "Calculateur de Patrimoine Net",
-    "nwc-desc": "Une application web développée avec React MUI qui permet aux utilisateurs de calculer leur patrimoine net en fonction de leurs actifs et passifs. Les utilisateurs peuvent créer et se connecter à des comptes, ainsi qu'ajouter, modifier et supprimer des entrées (actifs ou passifs), parmi d'autres fonctionnalités.",
+    "nwc-desc": "Une application web développée avec React MUI qui permet aux utilisateurs de calculer leur patrimoine net en fonction de leurs actifs et passifs. Les utilisateurs peuvent créer et se connecter à un compte, ainsi qu'ajouter, modifier et supprimer des entrées (actifs ou passifs), parmi d'autres fonctionnalités.",
     "technical-skills": "Compétences techniques",
     "programming-languages": "Langages de programmation",
     "frameworks-and-librairies": "Frameworks et bibliothèques",
@@ -93,7 +93,7 @@
     "get-in-touch": "Prenez contact",
     "get-in-touch-p1": "N'hésitez pas à me contacter directement par email à",
     "get-in-touch-p2a": "Vous pouvez également me contacter sur",
-    "get-in-touch-p2b": "ou consultez mon "
+    "get-in-touch-p2b": " ou consultez mon "
   },
   "es": {
     "home": "Inicio",
@@ -121,7 +121,7 @@
     "quizz-app-title": "QCMBuilder",
     "quizz-app-desc": "Una aplicación codificada en Java Swing. Permite al usuario crear y almacenar preguntas de quiz de varios tipos (preguntas de opción múltiple, asociaciones, etc.), que luego pueden ser utilizadas para generar quiz en forma de sitios web HTML.",
     "nwc-title": "Calculadora de Patrimonio Neto",
-    "nwc-desc": "Una aplicación web desarrollada con React MUI que permite a los usuarios calcular su patrimonio neto en función de sus activos y pasivos. Los usuarios pueden crear e iniciar sesión en cuentas, así como agregar, editar y eliminar entradas (activos o pasivos), entre otras funciones.",
+    "nwc-desc": "Una aplicación web desarrollada con React MUI que permite a los usuarios calcular su patrimonio neto en función de sus activos y pasivos. Los usuarios pueden crear e iniciar sesión en una cuenta, así como agregar, editar y eliminar entradas (activos o pasivos), entre otras funciones.",
     "technical-skills": "Habilidades técnicas",
     "programming-languages": "Lenguajes de programación",
     "frameworks-and-librairies": "Frameworks y bibliotecas",

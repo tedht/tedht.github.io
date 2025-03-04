@@ -33,7 +33,7 @@ function draw() {
 
 		// Calculate the y position based on scroll and layer speed
 		//layer.y = scrollY * layer.speed;
-		layer.y += 20 * layer.speed;
+		layer.y += 0.1 * layer.speed;
 		if(layer.y+canvas.height >= scaledHeight) layer.y = 0;
 
         ctx.drawImage(
