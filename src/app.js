@@ -7,6 +7,7 @@ function applyLanguage(language) {
 		element.textContent = localisation[language][key] || key;
 	});
 
+	updateCVLink(language);
 	updateLangBtns(language);
 
 	localStorage.setItem('language', language);
@@ -37,6 +38,21 @@ function updateLangBtns(language) {
 
 	activeLangBtn.textContent = getLanguageName(language);
 	activeLangBtn.setAttribute("data-lang", language);
+}
+
+const cvLinks = {
+    "en": "assets/TedHerambert_CV_En.pdf",
+    "fr": "assets/TedHerambert_CV_Fr.pdf",
+    "es": "assets/TedHerambert_CV_En.pdf"
+};
+
+function updateCVLink(language)
+{
+	const cvLinkElement = document.querySelector('[data-key="cv-link"]');
+    
+    if (cvLinkElement) {
+        cvLinkElement.href = cvLinks[language] || cvLinks["en"];
+    }
 }
 
 function getLanguageName(language) {
@@ -71,5 +87,5 @@ function loadLocalisation(language) {
 document.addEventListener("DOMContentLoaded", () => {
   const savedLanguage = localStorage.getItem('language') || 'fr';
   loadLocalisation(savedLanguage);
-  updateLangBtns(savedLanguage);
 });
+
