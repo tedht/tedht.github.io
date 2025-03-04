@@ -48,7 +48,7 @@ const cvLinks = {
 
 function updateCVLink(language)
 {
-	const cvLinkElement = document.querySelector('[data-key="cv-link"]');
+	const cvLinkElement = document.querySelector('[data-key="cv-link-2"]');
     
     if (cvLinkElement) {
         cvLinkElement.href = cvLinks[language] || cvLinks["en"];
