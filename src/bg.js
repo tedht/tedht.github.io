@@ -1,3 +1,5 @@
+// parallax background (EXPERIMENTAL CODE)
+
 const canvas = document.getElementById('backgroundCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -14,18 +16,6 @@ const layers = [
 layers[0].image.src = 'images/backgrounds/base_black.PNG';
 layers[1].image.src = 'images/backgrounds/stars_2.PNG';
 layers[2].image.src = 'images/backgrounds/stars_1.PNG';
-
-//let scrollY = 20;
-
-//let imagesLoaded = 0;
-//layers.forEach(layer => {
-//    layer.image.onload = () => {
-//        imagesLoaded++;
-//        if (imagesLoaded === layers.length) {
-//            draw(0);
-//        }
-//    };
-//});
 
 window.addEventListener('load',function(){ draw(0); });
 
@@ -61,10 +51,6 @@ function draw() {
 
 	requestAnimationFrame(draw);
 }
-
-//window.addEventListener('scroll', () => {
-//	scrollY = window.scrollY;
-//});
 
 window.addEventListener('resize', () => {
 	canvas.width = window.innerWidth;

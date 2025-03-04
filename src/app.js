@@ -54,7 +54,7 @@ function getLanguageName(language) {
 
 function loadLocalisation(language) {
 	const rootPath = window.location.origin;
-	fetch(`${rootPath}/data/localisation.json`)
+	fetch(`${rootPath}/localisation/localisation.json`)
 	  .then(response => response.json())
 	  .then(data => {
 		localisation = data;

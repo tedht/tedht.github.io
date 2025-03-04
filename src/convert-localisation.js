@@ -1,11 +1,11 @@
-// installer csvtojson : npm install csvtojson
-// converir en json : node convert-localisation.js
+// instal csvtojson : npm install csvtojson
+// convert to json : node src/convert-localisation.js
 const fs = require('fs');
 const csv = require('csvtojson');
 
 async function convertCSVtoJSON() {
-  const csvFilePath = 'data/localisation.csv';
-  const jsonFilePath = 'data/localisation.json';
+  const csvFilePath = 'localisation/localisation.csv';
+  const jsonFilePath = 'localisation/localisation.json';
 
   try {
     const jsonArray = await csv().fromFile(csvFilePath);
